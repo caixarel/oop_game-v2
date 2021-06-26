@@ -14,14 +14,13 @@ class Game{
     startGame(){
         const screenOverlay = document.getElementById('overlay');
         screenOverlay.style.display = "none";
-        this.getRandomPhrase();
         this.activePhrases = this.getRandomPhrase();
-        console.log(this.activePhrases);
         this.activePhrases.addPhraseToDisplay();
     }
     getRandomPhrase(){
         const randomNumber=Math.floor(Math.random()*this.phrases.length) ;
         const phrase = new Phrase(this.phrases[randomNumber]);
+        console.log(this.phrases[randomNumber]);
         return phrase;
     }
     handleInteraction(){

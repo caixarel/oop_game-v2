@@ -20,15 +20,21 @@ class Phrase{
             }
         }
     }
+    
     checkLetter(letter){
         let hasLetter = false;
+        console.log(this.phrase);
+
         for(let i= 0;i<this.phrase.length;i++){
+            
             if(letter == this.phrase[i]){
                hasLetter=true;
+
             }
         }
         if(hasLetter){
             this.showMatchedLetter(letter);
+
         }
     }
     showMatchedLetter(letter){
