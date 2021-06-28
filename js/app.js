@@ -7,14 +7,18 @@ console.log(letterButtons);
 const game = new Game();
 
 
+for(let i = 0;i< letterButtons.length; i++){
+    letterButtons[i].addEventListener('click',(e)=> 
+    {
+       console.log(e.target.textContent); 
+        game.handleInteraction(e.target.textContent);
 
+    })
+}
 
 document.addEventListener('keydown',(event)=>{
     //console.log(game.activePhrases.toLowerCase);
-const phrase = new Phrase(game.activePhrases.phrase);
-
-
-    phrase.checkLetter(event.key);
+    game.handleInteraction(event.key);
 })
 
 startGameButton.addEventListener('click',(e)=>{

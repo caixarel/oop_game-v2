@@ -23,8 +23,10 @@ class Game{
         console.log(this.phrases[randomNumber]);
         return phrase;
     }
-    handleInteraction(){
-
+    handleInteraction(letter){
+        const phrase = new Phrase(game.activePhrases.phrase);
+        phrase.checkLetter(letter);
+        console.log('eeeeee')
     }
     removeLife(){
 
