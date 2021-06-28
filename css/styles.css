@@ -44,6 +44,7 @@ h2 {
 
 h1 {
   font-size: 30px;
+  color:black
 }
 
 button {
@@ -52,12 +53,13 @@ button {
   padding: .5rem 1rem;
   color: var(--color-keys);
   font-size: var(--font-size-medium);
-  background-color: var(--color-keys-light);
+  background-color:#FFF  ;
   border-radius: 5px;
   -webkit-transition: var(--transition);
   -o-transition: var(--transition);
   transition: var(--transition);
   cursor: pointer;
+  font-weight:bold;
 }
 
 #btn__reset {
@@ -142,6 +144,10 @@ button {
   color: #FFFFFF;
 }
 
+.hovering{
+  background:lightgoldenrodyellow;
+}
+
 .btn__reset {
   padding: 16px;
   margin: 50px auto;
@@ -160,13 +166,14 @@ button {
 }
 
 
+
 /* Overlay */
 
 #overlay {
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: #FFFFFF;
+  color:white;
   justify-content: center;
   top: 0;
   bottom: 0;
@@ -196,7 +203,7 @@ button {
 }
 
 .lose {
-  background-color: #f5785f;
+  background-color:saddlebrown;
 }
 
 .lose a {

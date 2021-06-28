@@ -1,0 +1,1 @@
+added an hovering class to the buttons when the mouse is over them. this will change the background color of the buttons when the mouse is over them and return them to the normal color when the mouse is off them.

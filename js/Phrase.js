@@ -29,9 +29,8 @@ class Phrase{
                hasLetter=true;
             }
         }
-        if(hasLetter){
-            this.showMatchedLetter(letter);
-        }
+        return hasLetter
+        
     }
     showMatchedLetter(letter){
         const correctletters =document.getElementsByClassName(`letter ${letter}`);
