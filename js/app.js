@@ -3,7 +3,6 @@
  * app.js */
 const startGameButton = document.getElementById('btn__reset');
 const letterButtons = document.getElementsByClassName('key');
-console.log(letterButtons);
 const game = new Game();
 //If the user is on the Menus the game interactions should be disabled
 let canPlay=false;
