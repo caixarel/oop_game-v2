@@ -4,11 +4,12 @@
 class Game{
     constructor(){
         this.missed =0;
-        this.phrases = ['Ola tudo bem',
-        'I love dogs', 
-        'Walk on the snow',
-        'I like computers',
-        'We watch football'];
+        this.phrases = [new Phrase('Ola tudo bem'),
+        new Phrase('I love dogs'), 
+        new Phrase('Walk on the snow'), 
+        new Phrase('I like computers'), 
+        new Phrase('We watch football'), 
+        ];
         this.activePhrases = null;
     }
     
@@ -25,8 +26,7 @@ class Game{
     //A reandom phrase will be chosen from the phrases array defined on the constructor
     getRandomPhrase(){
         const randomNumber=Math.floor(Math.random()*this.phrases.length) ;
-        const phrase = new Phrase(this.phrases[randomNumber]);
-        return phrase;
+        return this.phrases[randomNumber];
     }
 
     //The game's interaction will be handled in this function

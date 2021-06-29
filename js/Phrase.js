@@ -6,6 +6,7 @@ class Phrase{
         this.phrase = phrase.toLowerCase();
     }
 
+    
     //The frase to be displayed will be created
     addPhraseToDisplay(){
         const ul = document.getElementById('phrase').firstElementChild;

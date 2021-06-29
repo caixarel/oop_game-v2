@@ -3,7 +3,7 @@
  * app.js */
 const startGameButton = document.getElementById('btn__reset');
 const letterButtons = document.getElementsByClassName('key');
-const game = new Game();
+let game ;
 //If the user is on the Menus the game interactions should be disabled
 let canPlay=false;
 
@@ -37,6 +37,7 @@ document.addEventListener('keydown',(event)=>{
 })
 //When the Start Game button is click a new game will start
 startGameButton.addEventListener('click',(e)=>{   
+    game = new Game();
     const ul = document.getElementById('phrase').firstElementChild;
     ul.innerHTML= "";
     const lives = document.getElementById('scoreboard').firstElementChild;
